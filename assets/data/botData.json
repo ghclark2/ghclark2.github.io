@@ -1,0 +1,164 @@
+[
+ {
+   "type": "s+",
+   "level": 1,
+   "subLevel": "a",
+   "problem": "a+b",
+   "paramSet1": "a:+1:9,b:+1:9",
+   "paramSet2": "a:-1:9,b:±1:9!-a",
+   "solution": "{a+b}"
+ },
+ {
+   "type": "s+",
+   "level": 2,
+   "subLevel": "a",
+   "problem": "(ax)+(bx)",
+   "paramSet1": "a:+1:9,b:+1:9",
+   "paramSet2": "a:-1:9,b:±1:9!-a",
+   "solution": "{a+b}x"
+ },
+ {
+   "type": "s+",
+   "level": 3,
+   "subLevel": "a",
+   "problem": "a+(bx)+c",
+   "paramSet1": "a:+1:9,b:+1:9,c:+1:9",
+   "paramSet2": "a:±1:9,b:±1:9,c:±1:9",
+   "solution": "{a+c}+(bx)"
+ },
+ {
+   "type": "s+",
+   "level": 3,
+   "subLevel": "b",
+   "problem": "a+(bx)+(cx)",
+   "paramSet1": "a:+1:9,b:+1:9,c:+1:9",
+   "paramSet2": "a:±1:9,b:±1:9,c:±1:9",
+   "solution": "a+({b+c}x)"
+ },
+ {
+   "type": "s+",
+   "level": 3,
+   "subLevel": "c",
+   "problem": "(ax)+b+(cx)+d",
+   "paramSet1": "a:+1:9,b:+1:9,c:+1:9,d:+1:9",
+   "paramSet2": "a:±1:9,b:±1:9,c:±1:9,d:±1:9",
+   "solution": "{b+d}+({a+c}x)"
+ },
+ {
+   "type": "s+",
+   "level": 4,
+   "subLevel": "a",
+   "problem": "",
+   "paramSet1": "",
+   "paramSet2": "",
+   "solution": ""
+ },
+ {
+   "type": "s+",
+   "level": 5,
+   "subLevel": "a",
+   "problem": "",
+   "paramSet1": "",
+   "paramSet2": "",
+   "solution": ""
+ },
+ {
+   "type": "s+",
+   "level": 5,
+   "subLevel": "b",
+   "problem": "",
+   "paramSet1": "",
+   "paramSet2": "",
+   "solution": ""
+ },
+ {
+   "type": "s+",
+   "level": 6,
+   "subLevel": "a",
+   "problem": "",
+   "paramSet1": "",
+   "paramSet2": "",
+   "solution": ""
+ },
+ {
+   "type": "s+",
+   "level": 6,
+   "subLevel": "b",
+   "problem": "(ax)+(bx)+(cxy)+(dxy)+e",
+   "paramSet1": "",
+   "paramSet2": "",
+   "solution": ""
+ },
+ {
+  "type": "sx+",
+  "level": 2,
+  "subLevel": "a",
+  "problem": "a((bx)+c)",
+  "paramSet1": "a:+2:9,b:+2:9,c:+2:9",
+  "paramSet2": "",
+  "solution": "({a*b}x)+{a*c}"
+},
+{
+  "type": "sx+",
+  "level": 3,
+  "subLevel": "a",
+  "problem": "ax((bx)+c)",
+  "paramSet1": "a:+2:9,b:+2:9,c:+2:9",
+  "paramSet2": "a:±2:9,b:±2:9,c:±2:9",
+  "solution": "({a*b}(x^2))+({a*c}x)"
+},
+ {
+  "type": "sx",
+  "level": 1,
+  "subLevel": "a",
+  "problem": "x*x",
+  "paramSet1": "",
+  "paramSet2": "",
+  "solution": "x^2"
+},
+{
+  "type": "test",
+  "level": 1,
+  "subLevel": "a",
+  "problem": "2+0+3-1",
+  "paramSet1": "a:+2:9,b:+2:9,c:+2:9",
+  "paramSet2": "a:±2:9,b:±2:9,c:±2:9",
+  "solution": "ax"
+},
+{
+  "type": "test",
+  "level": 2,
+  "subLevel": "a",
+  "problem": "(2(a+x))/(x(a+x))",
+  "paramSet1": "a:+2:9,b:+2:9,c:+2:9",
+  "paramSet2": "a:±2:9,b:±2:9,c:±2:9",
+  "solution": "ax"
+},
+{
+   "type": "sx",
+   "level": 2,
+   "subLevel": "a",
+   "problem": "x*(x^a)",
+   "paramSet1": "a:+2:9",
+   "paramSet2": "a:±2:9",
+   "solution": "x^{a+1}"
+ },
+ {
+  "type": "sx",
+  "level": 3,
+  "subLevel": "a",
+  "problem": "x*(x^a)*a*y*xy",
+  "paramSet1": "a:+2:9",
+  "paramSet2": "a:±2:9",
+  "solution": "x^{a+1}"
+},
+ {
+   "type": "sx",
+   "level": 6,
+   "subLevel": "a",
+   "problem": "a(x^b)(y^c)*d(y^e)(z^f)",
+   "paramSet1": "a:+2:9,b:+1:5,c:+1:5,d:+2:9,e:+1:5,f:+1:5",
+   "paramSet2": "",
+   "solution": "{a*d}(x^b)(y^{c+e})(z^f)"
+ }
+]
